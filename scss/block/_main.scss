@@ -1,22 +1,23 @@
-
 .outer {
-    
+
     &__container {
         background-image: url(./../../img/bg__main.png);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
+        margin-bottom: 100px;
     }
 }
+
 .hero {
-    
+
     &__wrapper {
         padding-top: 153px;
         padding-bottom: 153px;
         max-width: 500px;
         width: 100%;
     }
-    
+
     &__heading {
         font-family: 'Space Mono';
         font-style: normal;
@@ -27,7 +28,7 @@
         color: #FFFFFF;
         margin-bottom: 40px;
     }
-    
+
     &__text {
         font-family: 'Lexend Deca';
         font-style: normal;
@@ -40,23 +41,23 @@
         display: flex;
         margin-left: 85px;
         position: relative;
-        
-        &::before{
+
+        &::before {
             content: url(./../../img/bg_line.svg);
             position: absolute;
             top: 50%;
             left: calc(-50% - 57px);
         }
-        
-        &::after{
+
+        &::after {
             content: url(./../../img/bg_line-arrow.svg);
             position: absolute;
             top: 50%;
             left: calc(100% + 40px);
         }
-        
+
     }
-    
+
     &__btn {
         font-family: 'Space Mono';
         font-style: normal;
@@ -67,8 +68,8 @@
         padding: 14px 39px;
         margin-left: 85px;
         background: $yellow;
-        
-        &:hover{
+
+        &:hover {
             background: transparent;
             color: $yellow;
             box-shadow: 0 0 0 3px $yellow;
@@ -77,18 +78,18 @@
 }
 
 @media only screen and (max-width: 1000px) {
-    
-    .hero__text{
-        &::after{
+
+    .hero__text {
+        &::after {
             display: none;
         }
     }
 }
 
-@media only screen and (max-width: 768px){
-    
+@media only screen and (max-width: 768px) {
+
     .outer {
-        
+
         &__container {
             background-image: url(./../../img/bg-main-tablet.png);
             background-repeat: no-repeat;
@@ -96,9 +97,9 @@
             background-position: center;
         }
     }
-    
+
     .hero {
-        
+
         &__wrapper {
             padding-top: 153px;
             padding-bottom: 217px;
@@ -109,7 +110,7 @@
             justify-content: center;
             margin-left: 90px;
         }
-        
+
         &__heading {
             font-family: 'Space Mono';
             font-style: normal;
@@ -121,7 +122,7 @@
             margin-bottom: 40px;
             text-align: center;
         }
-        
+
         &__text {
             font-family: 'Lexend Deca';
             font-style: normal;
@@ -134,16 +135,16 @@
             margin-left: -10px;
             text-align: center;
             width: 573px;
-            
-            &::before{
+
+            &::before {
                 content: url(./../../img/bg_line-arrow.svg);
                 top: calc(100% + 120px);
                 left: -42%;
-                
+
             }
-            
+
         }
-        
+
         &__btn {
             font-family: 'Space Mono';
             font-style: normal;
@@ -155,21 +156,21 @@
             margin-left: 165px;
             background: $yellow;
             max-width: 180px;
-            
-            &:hover{
+
+            &:hover {
                 background: transparent;
                 color: $yellow;
                 box-shadow: 0 0 0 3px $yellow;
             }
         }
     }
-    
+
 }
 
-@media only screen and (max-width: 460px){
-    
+@media only screen and (max-width: 460px) {
+
     .outer {
-        
+
         &__container {
             background-image: url(./../../img/bg-main-tablet.png);
             background-repeat: no-repeat;
@@ -177,9 +178,9 @@
             background-position: center;
         }
     }
-    
+
     .hero {
-        
+
         &__wrapper {
             padding-top: 153px;
             padding-bottom: 217px;
@@ -190,7 +191,7 @@
             justify-content: center;
             margin-left: 0;
         }
-        
+
         &__heading {
             font-family: 'Space Mono';
             font-style: normal;
@@ -202,7 +203,7 @@
             margin-bottom: 40px;
             text-align: center;
         }
-        
+
         &__text {
             font-family: 'Lexend Deca';
             font-style: normal;
@@ -215,16 +216,16 @@
             margin-left: -70px;
             text-align: center;
             width: 573px;
-            
-            &::before{
+
+            &::before {
                 content: url(./../../img/bg_line-arrow.svg);
                 top: calc(100% + 120px);
                 left: -42%;
-                
+
             }
-            
+
         }
-        
+
         &__btn {
             font-family: 'Space Mono';
             font-style: normal;
@@ -236,21 +237,21 @@
             margin-left: 95px;
             background: $yellow;
 
-            
-            &:hover{
+
+            &:hover {
                 background: transparent;
                 color: $yellow;
                 box-shadow: 0 0 0 3px $yellow;
             }
         }
     }
-    
+
 }
 
-@media only screen and (max-width: 425px){
-    
+@media only screen and (max-width: 425px) {
+
     .outer {
-        
+
         &__container {
             background-image: url(./../../img/bg-main-mobile.png);
             background-repeat: no-repeat;
@@ -258,9 +259,9 @@
             background-position: center;
         }
     }
-    
+
     .hero {
-        
+
         &__wrapper {
             padding-top: 115px;
             padding-bottom: 217px;
@@ -271,7 +272,7 @@
             justify-content: center;
             margin-left: 0;
         }
-        
+
         &__heading {
             font-family: 'Space Mono';
             font-style: normal;
@@ -286,7 +287,7 @@
             width: 311px;
             margin-left: 32px;
         }
-        
+
         &__text {
             font-family: 'Lexend Deca';
             font-style: normal;
@@ -300,16 +301,16 @@
             margin-left: 32px;
             text-align: center;
             width: 311px;
-            
-            &::before{
+
+            &::before {
                 content: url(./../../img/bg_line-arrow.svg);
                 top: calc(100% + 120px);
                 left: -110%;
-                
+
             }
-            
+
         }
-        
+
         &__btn {
             font-family: 'Space Mono';
             font-style: normal;
@@ -321,21 +322,21 @@
             margin-left: 98px;
             background: $yellow;
 
-            
-            &:hover{
+
+            &:hover {
                 background: transparent;
                 color: $yellow;
                 box-shadow: 0 0 0 3px $yellow;
             }
         }
     }
-    
+
 }
 
-@media only screen and (max-width: 375px){
-    
+@media only screen and (max-width: 375px) {
+
     .outer {
-        
+
         &__container {
             background-image: url(./../../img/bg-main-mobile.png);
             background-repeat: no-repeat;
@@ -343,9 +344,9 @@
             background-position: center;
         }
     }
-    
+
     .hero {
-        
+
         &__wrapper {
             padding-top: 115px;
             padding-bottom: 217px;
@@ -356,7 +357,7 @@
             justify-content: center;
             margin-left: 0;
         }
-        
+
         &__heading {
             font-family: 'Space Mono';
             font-style: normal;
@@ -371,7 +372,7 @@
             width: 311px;
             margin-left: 8px;
         }
-        
+
         &__text {
             font-family: 'Lexend Deca';
             font-style: normal;
@@ -385,16 +386,16 @@
             margin-left: 8px;
             text-align: center;
             width: 311px;
-            
-            &::before{
+
+            &::before {
                 content: url(./../../img/bg_line-arrow.svg);
                 top: calc(100% + 120px);
                 left: -110%;
-                
+
             }
-            
+
         }
-        
+
         &__btn {
             font-family: 'Space Mono';
             font-style: normal;
@@ -406,21 +407,21 @@
             margin-left: 74px;
             background: $yellow;
 
-            
-            &:hover{
+
+            &:hover {
                 background: transparent;
                 color: $yellow;
                 box-shadow: 0 0 0 3px $yellow;
             }
         }
     }
-    
+
 }
 
-@media only screen and (max-width: 320px){
-    
+@media only screen and (max-width: 320px) {
+
     .outer {
-        
+
         &__container {
             background-image: url(./../../img/bg-main-mobile.png);
             background-repeat: no-repeat;
@@ -428,9 +429,9 @@
             background-position: center;
         }
     }
-    
+
     .hero {
-        
+
         &__wrapper {
             padding-top: 115px;
             padding-bottom: 217px;
@@ -441,7 +442,7 @@
             justify-content: center;
             margin-left: 0;
         }
-        
+
         &__heading {
             font-family: 'Space Mono';
             font-style: normal;
@@ -456,7 +457,7 @@
             width: 311px;
             margin-left: -25px;
         }
-        
+
         &__text {
             font-family: 'Lexend Deca';
             font-style: normal;
@@ -470,16 +471,16 @@
             margin-left: -25px;
             text-align: center;
             width: 311px;
-            
-            &::before{
+
+            &::before {
                 content: url(./../../img/bg_line-arrow.svg);
                 top: calc(100% + 120px);
                 left: -110%;
-                
+
             }
-            
+
         }
-        
+
         &__btn {
             font-family: 'Space Mono';
             font-style: normal;
@@ -491,13 +492,120 @@
             margin-left: 45px;
             background: $yellow;
 
-            
-            &:hover{
+
+            &:hover {
                 background: transparent;
                 color: $yellow;
                 box-shadow: 0 0 0 3px $yellow;
             }
         }
     }
-    
+
+}
+
+// ----------------------------------------
+
+.step {
+
+    &__list {
+        margin-bottom: 100px;
+        display: flex;
+        padding-top: 100px;
+    }
+
+    &__item1 {
+        padding-top: 60px;
+        max-width: 380px;
+        width: 100%;
+        position: relative;
+
+        &::before{
+            content: '';
+            display: inline-block;
+            width: 380px;
+            border: 15px solid #E5ECF4;
+            position: absolute;
+            top: -20px;
+            left: -350px;
+            z-index: -1;
+        }
+
+        &::after {
+            content: url(./../../img/app.svg);
+            position: absolute;
+            top: -60px;
+            left: 0;
+        }
+    }
+
+    &__item2 {
+        padding-top: 60px;
+        max-width: 380px;
+        width: 100%;
+        position: relative;
+
+        &::before{
+            content: '';
+            display: inline-block;
+            width: 380px;
+            border: 15px solid #E5ECF4;
+            position: absolute;
+            top: -20px;
+            left: -350px;
+            z-index: -1;
+        }
+
+        &::after {
+            content: url(./../../img/scooter.svg);
+            position: absolute;
+            top: -60px;
+            left: 0;
+        }
+    }
+
+    &__item3 {
+        padding-top: 60px;
+        max-width: 380px;
+        width: 100%;
+        position: relative;
+
+        &::before{
+            content: '';
+            display: inline-block;
+            width: 380px;
+            border: 15px solid #E5ECF4;
+            position: absolute;
+            top: -20px;
+            left: -350px;
+            z-index: -1;
+        }
+
+        &::after {
+            content: url(./../../img/ride.svg);
+            position: absolute;
+            top: -60px;
+            left: 0;
+        }
+    }
+
+    &__item-heading {
+        font-family: 'Space Mono';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 28px;
+        letter-spacing: -1.07143px;
+        color: #495567;
+        margin-bottom: 27px;
+    }
+
+    &__item-text {
+        font-family: 'Lexend Deca';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 25px;
+        color: #939CAA;
+        width: 350px;
+    }
 }

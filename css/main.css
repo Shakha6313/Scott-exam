@@ -534,6 +534,7 @@ ul, li, ol {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  margin-bottom: 100px;
 }
 
 .hero__wrapper {
@@ -931,4 +932,94 @@ ul, li, ol {
     color: #FCB72B;
     box-shadow: 0 0 0 3px #FCB72B;
   }
+}
+.step__list {
+  margin-bottom: 100px;
+  display: flex;
+  padding-top: 100px;
+}
+.step__item1 {
+  padding-top: 60px;
+  max-width: 380px;
+  width: 100%;
+  position: relative;
+}
+.step__item1::before {
+  content: "";
+  display: inline-block;
+  width: 380px;
+  border: 15px solid #E5ECF4;
+  position: absolute;
+  top: -20px;
+  left: -350px;
+  z-index: -1;
+}
+.step__item1::after {
+  content: url(./../../img/app.svg);
+  position: absolute;
+  top: -60px;
+  left: 0;
+}
+.step__item2 {
+  padding-top: 60px;
+  max-width: 380px;
+  width: 100%;
+  position: relative;
+}
+.step__item2::before {
+  content: "";
+  display: inline-block;
+  width: 380px;
+  border: 15px solid #E5ECF4;
+  position: absolute;
+  top: -20px;
+  left: -350px;
+  z-index: -1;
+}
+.step__item2::after {
+  content: url(./../../img/scooter.svg);
+  position: absolute;
+  top: -60px;
+  left: 0;
+}
+.step__item3 {
+  padding-top: 60px;
+  max-width: 380px;
+  width: 100%;
+  position: relative;
+}
+.step__item3::before {
+  content: "";
+  display: inline-block;
+  width: 380px;
+  border: 15px solid #E5ECF4;
+  position: absolute;
+  top: -20px;
+  left: -350px;
+  z-index: -1;
+}
+.step__item3::after {
+  content: url(./../../img/ride.svg);
+  position: absolute;
+  top: -60px;
+  left: 0;
+}
+.step__item-heading {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -1.07143px;
+  color: #495567;
+  margin-bottom: 27px;
+}
+.step__item-text {
+  font-family: "Lexend Deca";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  color: #939CAA;
+  width: 350px;
 }/*# sourceMappingURL=main.css.map */
