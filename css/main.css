@@ -407,7 +407,7 @@ ul, li, ol {
   padding: 0 20px;
 }
 
-.out__container {
+.outer__container {
   max-width: 1440px;
   margin: 0 auto;
 }
@@ -423,11 +423,16 @@ ul, li, ol {
 .header__logo-img {
   margin-right: 58px;
 }
+.header__nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1000px;
+  width: 100%;
+}
 .header__list {
   display: flex;
   gap: 32px;
-  max-width: 1000px;
-  width: 100%;
 }
 .header__link {
   font-family: "Space Mono";
@@ -470,7 +475,7 @@ ul, li, ol {
 
 @media only screen and (max-width: 615px) {
   .header__logo-img {
-    margin-right: 29px;
+    margin-right: 0;
   }
 }
 @media only screen and (max-width: 550px) {
@@ -481,13 +486,19 @@ ul, li, ol {
     position: relative;
   }
   .header__list {
-    display: none;
+    display: block;
+    position: absolute;
+    top: calc(100% + 100px);
   }
   .header__link {
-    display: none;
+    display: block;
   }
   .header__btn {
-    display: none;
+    display: block;
+    flex-direction: column;
+    position: absolute;
+    top: calc(100% + 300px);
+    left: 0;
   }
   .header__burger {
     display: flex;
@@ -510,9 +521,414 @@ ul, li, ol {
     max-width: 375px;
     width: 100%;
     justify-content: center;
-    position: relative;
   }
   .header__logo-img {
     margin-right: 0;
+  }
+  .header__wrapper > .header__nav {
+    display: none;
+  }
+}
+.outer__container {
+  background-image: url(./../../img/bg__main.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero__wrapper {
+  padding-top: 153px;
+  padding-bottom: 153px;
+  max-width: 500px;
+  width: 100%;
+}
+.hero__heading {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 56px;
+  letter-spacing: -2.5px;
+  color: #FFFFFF;
+  margin-bottom: 40px;
+}
+.hero__text {
+  font-family: "Lexend Deca";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  color: #FFFFFF;
+  margin-bottom: 40px;
+  width: 405px;
+  display: flex;
+  margin-left: 85px;
+  position: relative;
+}
+.hero__text::before {
+  content: url(./../../img/bg_line.svg);
+  position: absolute;
+  top: 50%;
+  left: calc(-50% - 57px);
+}
+.hero__text::after {
+  content: url(./../../img/bg_line-arrow.svg);
+  position: absolute;
+  top: 50%;
+  left: calc(100% + 40px);
+}
+.hero__btn {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 25px;
+  color: #FFFFFF;
+  padding: 14px 39px;
+  margin-left: 85px;
+  background: #FCB72B;
+}
+.hero__btn:hover {
+  background: transparent;
+  color: #FCB72B;
+  box-shadow: 0 0 0 3px #FCB72B;
+}
+
+@media only screen and (max-width: 1000px) {
+  .hero__text::after {
+    display: none;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .outer__container {
+    background-image: url(./../../img/bg-main-tablet.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .hero__wrapper {
+    padding-top: 153px;
+    padding-bottom: 217px;
+    max-width: 573px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 90px;
+  }
+  .hero__heading {
+    font-family: "Space Mono";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 56px;
+    letter-spacing: -2.5px;
+    color: #FFFFFF;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  .hero__text {
+    font-family: "Lexend Deca";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    color: #FFFFFF;
+    margin-bottom: 40px;
+    position: relative;
+    margin-left: -10px;
+    text-align: center;
+    width: 573px;
+  }
+  .hero__text::before {
+    content: url(./../../img/bg_line-arrow.svg);
+    top: calc(100% + 120px);
+    left: -42%;
+  }
+  .hero__btn {
+    font-family: "Space Mono";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 25px;
+    color: #FFFFFF;
+    padding: 14px 39px;
+    margin-left: 165px;
+    background: #FCB72B;
+    max-width: 180px;
+  }
+  .hero__btn:hover {
+    background: transparent;
+    color: #FCB72B;
+    box-shadow: 0 0 0 3px #FCB72B;
+  }
+}
+@media only screen and (max-width: 460px) {
+  .outer__container {
+    background-image: url(./../../img/bg-main-tablet.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .hero__wrapper {
+    padding-top: 153px;
+    padding-bottom: 217px;
+    max-width: 573px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 0;
+  }
+  .hero__heading {
+    font-family: "Space Mono";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 56px;
+    letter-spacing: -2.5px;
+    color: #FFFFFF;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  .hero__text {
+    font-family: "Lexend Deca";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    color: #FFFFFF;
+    margin-bottom: 40px;
+    position: relative;
+    margin-left: -70px;
+    text-align: center;
+    width: 573px;
+  }
+  .hero__text::before {
+    content: url(./../../img/bg_line-arrow.svg);
+    top: calc(100% + 120px);
+    left: -42%;
+  }
+  .hero__btn {
+    font-family: "Space Mono";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 25px;
+    color: #FFFFFF;
+    padding: 14px 39px;
+    margin-left: 95px;
+    background: #FCB72B;
+  }
+  .hero__btn:hover {
+    background: transparent;
+    color: #FCB72B;
+    box-shadow: 0 0 0 3px #FCB72B;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .outer__container {
+    background-image: url(./../../img/bg-main-mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .hero__wrapper {
+    padding-top: 115px;
+    padding-bottom: 217px;
+    max-width: 573px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 0;
+  }
+  .hero__heading {
+    font-family: "Space Mono";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: -1.78571px;
+    color: #FFFFFF;
+    margin-bottom: 24px;
+    text-align: center;
+    width: 311px;
+    margin-left: 32px;
+  }
+  .hero__text {
+    font-family: "Lexend Deca";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 40px;
+    position: relative;
+    margin-left: 32px;
+    text-align: center;
+    width: 311px;
+  }
+  .hero__text::before {
+    content: url(./../../img/bg_line-arrow.svg);
+    top: calc(100% + 120px);
+    left: -110%;
+  }
+  .hero__btn {
+    font-family: "Space Mono";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 25px;
+    color: #FFFFFF;
+    padding: 14px 39px;
+    margin-left: 98px;
+    background: #FCB72B;
+  }
+  .hero__btn:hover {
+    background: transparent;
+    color: #FCB72B;
+    box-shadow: 0 0 0 3px #FCB72B;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .outer__container {
+    background-image: url(./../../img/bg-main-mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .hero__wrapper {
+    padding-top: 115px;
+    padding-bottom: 217px;
+    max-width: 573px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 0;
+  }
+  .hero__heading {
+    font-family: "Space Mono";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: -1.78571px;
+    color: #FFFFFF;
+    margin-bottom: 24px;
+    text-align: center;
+    width: 311px;
+    margin-left: 8px;
+  }
+  .hero__text {
+    font-family: "Lexend Deca";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 40px;
+    position: relative;
+    margin-left: 8px;
+    text-align: center;
+    width: 311px;
+  }
+  .hero__text::before {
+    content: url(./../../img/bg_line-arrow.svg);
+    top: calc(100% + 120px);
+    left: -110%;
+  }
+  .hero__btn {
+    font-family: "Space Mono";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 25px;
+    color: #FFFFFF;
+    padding: 14px 39px;
+    margin-left: 74px;
+    background: #FCB72B;
+  }
+  .hero__btn:hover {
+    background: transparent;
+    color: #FCB72B;
+    box-shadow: 0 0 0 3px #FCB72B;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .outer__container {
+    background-image: url(./../../img/bg-main-mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .hero__wrapper {
+    padding-top: 115px;
+    padding-bottom: 217px;
+    max-width: 573px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 0;
+  }
+  .hero__heading {
+    font-family: "Space Mono";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: -1.78571px;
+    color: #FFFFFF;
+    margin-bottom: 24px;
+    text-align: center;
+    width: 311px;
+    margin-left: -25px;
+  }
+  .hero__text {
+    font-family: "Lexend Deca";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 40px;
+    position: relative;
+    margin-left: -25px;
+    text-align: center;
+    width: 311px;
+  }
+  .hero__text::before {
+    content: url(./../../img/bg_line-arrow.svg);
+    top: calc(100% + 120px);
+    left: -110%;
+  }
+  .hero__btn {
+    font-family: "Space Mono";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 25px;
+    color: #FFFFFF;
+    padding: 14px 39px;
+    margin-left: 45px;
+    background: #FCB72B;
+  }
+  .hero__btn:hover {
+    background: transparent;
+    color: #FCB72B;
+    box-shadow: 0 0 0 3px #FCB72B;
   }
 }/*# sourceMappingURL=main.css.map */

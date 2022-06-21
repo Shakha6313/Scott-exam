@@ -19,11 +19,18 @@
         margin-right: 58px;
     }
     
+    &__nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 1000px;
+        width: 100%;
+    }
+
     &__list {
         display: flex;
         gap: 32px;
-        max-width: 1000px;
-        width: 100%;
+        
         
     }
     
@@ -83,7 +90,7 @@
     .header{
         
         &__logo-img {
-            margin-right: 29px;
+            margin-right: 0;
         }
         
     }
@@ -97,18 +104,26 @@
             width: 100%;
             justify-content: center;
             position: relative;
+
+            
         }
         
         &__list {
-            display: none;
+            display: block;
+            position: absolute;
+            top: calc(100% + 100px);
         }
         
         &__link {
-            display: none;
+            display: block;
         }
         
         &__btn {
-            display: none;
+            display: block;
+            flex-direction: column;
+            position: absolute;
+            top: calc(100% + 300px);
+            left: 0;
         }
 
         &__burger{
@@ -140,11 +155,18 @@
             max-width: 375px;
             width: 100%;
             justify-content: center;
-            position: relative;
+            
         }
 
         &__logo-img {
             margin-right: 0;
         }
+
+        &__wrapper > &__nav{
+            display: none;
+        }
     }
+
+
+
 }
