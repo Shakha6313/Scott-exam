@@ -122,12 +122,29 @@
 
         &__burger-gam{
             position: absolute;
-            top: 0;
+            top: 8.5px;
             left: 0;
         }
 
         &__burger-cross{
             display: none;
+        }
+    }
+}
+
+@media only screen and (max-width: 550px){
+
+    .header{
+        
+        &__wrapper {
+            max-width: 375px;
+            width: 100%;
+            justify-content: center;
+            position: relative;
+        }
+
+        &__logo-img {
+            margin-right: 0;
         }
     }
 }

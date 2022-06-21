@@ -498,10 +498,21 @@ ul, li, ol {
   }
   .header__burger-gam {
     position: absolute;
-    top: 0;
+    top: 8.5px;
     left: 0;
   }
   .header__burger-cross {
     display: none;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .header__wrapper {
+    max-width: 375px;
+    width: 100%;
+    justify-content: center;
+    position: relative;
+  }
+  .header__logo-img {
+    margin-right: 0;
   }
 }/*# sourceMappingURL=main.css.map */
