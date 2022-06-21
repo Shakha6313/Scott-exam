@@ -943,6 +943,7 @@ ul, li, ol {
   max-width: 380px;
   width: 100%;
   position: relative;
+  gap: 30px;
 }
 .step__item1::before {
   content: "";
@@ -965,6 +966,7 @@ ul, li, ol {
   max-width: 380px;
   width: 100%;
   position: relative;
+  gap: 30px;
 }
 .step__item2::before {
   content: "";
@@ -987,6 +989,7 @@ ul, li, ol {
   max-width: 380px;
   width: 100%;
   position: relative;
+  gap: 30px;
 }
 .step__item3::before {
   content: "";
@@ -1021,5 +1024,190 @@ ul, li, ol {
   font-size: 15px;
   line-height: 25px;
   color: #939CAA;
-  width: 350px;
+  max-width: 350px;
+  width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  .step__list {
+    margin-bottom: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin-left: 250px;
+  }
+  .step__item1 {
+    padding-top: 60px;
+    max-width: 380px;
+    width: 100%;
+    position: relative;
+    gap: 30px;
+  }
+  .step__item1::before {
+    content: "";
+    display: inline-block;
+    width: 380px;
+    border: 15px solid #E5ECF4;
+    position: absolute;
+    top: 0px;
+    left: -350px;
+    z-index: -1;
+    transform: rotate(90deg);
+  }
+  .step__item1::after {
+    content: url(./../../img/app.svg);
+    position: absolute;
+    top: 60px;
+    left: -208px;
+  }
+  .step__item2 {
+    padding-top: 60px;
+    max-width: 380px;
+    width: 100%;
+    position: relative;
+    gap: 30px;
+  }
+  .step__item2::before {
+    content: "";
+    display: inline-block;
+    width: 380px;
+    border: 15px solid #E5ECF4;
+    position: absolute;
+    top: 0px;
+    left: -350px;
+    z-index: -1;
+    transform: rotate(90deg);
+  }
+  .step__item2::after {
+    content: url(./../../img/scooter.svg);
+    position: absolute;
+    top: 60px;
+    left: -208px;
+  }
+  .step__item3 {
+    padding-top: 60px;
+    max-width: 380px;
+    width: 100%;
+    position: relative;
+    gap: 30px;
+  }
+  .step__item3::before {
+    content: "";
+    display: inline-block;
+    width: 380px;
+    border: 15px solid #E5ECF4;
+    position: absolute;
+    top: -50px;
+    left: -350px;
+    z-index: -1;
+    transform: rotate(90deg);
+  }
+  .step__item3::after {
+    content: url(./../../img/ride.svg);
+    position: absolute;
+    top: 60px;
+    left: -208px;
+  }
+  .step__item-heading {
+    font-family: "Space Mono";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -1.07143px;
+    color: #495567;
+    margin-bottom: 27px;
+  }
+  .step__item-text {
+    font-family: "Lexend Deca";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    color: #939CAA;
+    max-width: 398px;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .step__list {
+    margin-bottom: 150px;
+    display: flex;
+    padding-top: 100px;
+    position: relative;
+    max-width: 380px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .step__item1 {
+    padding-top: 60px;
+    max-width: 380px;
+    width: 100%;
+    gap: 30px;
+  }
+  .step__item1::before {
+    display: none;
+  }
+  .step__item1::after {
+    content: url(./../../img/app.svg);
+    position: absolute;
+    top: -60px;
+    left: 135px;
+  }
+  .step__item2 {
+    padding-top: 60px;
+    max-width: 380px;
+    width: 100%;
+    position: relative;
+    gap: 30px;
+  }
+  .step__item2::before {
+    display: none;
+  }
+  .step__item2::after {
+    content: url(./../../img/scooter.svg);
+    position: absolute;
+    top: -60px;
+    left: 135px;
+  }
+  .step__item3 {
+    padding-top: 60px;
+    max-width: 380px;
+    width: 100%;
+    position: relative;
+    gap: 30px;
+  }
+  .step__item3::before {
+    display: none;
+  }
+  .step__item3::after {
+    content: url(./../../img/ride.svg);
+    position: absolute;
+    top: -60px;
+    left: 135px;
+  }
+  .step__item-heading {
+    font-family: "Space Mono";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -1.07143px;
+    color: #495567;
+    margin-bottom: 27px;
+  }
+  .step__item-text {
+    font-family: "Lexend Deca";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    color: #939CAA;
+    max-width: 350px;
+    width: 100%;
+    text-align: center;
+    margin-left: 15px;
+    margin-bottom: 128px;
+  }
 }/*# sourceMappingURL=main.css.map */
