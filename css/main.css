@@ -1354,7 +1354,7 @@ ul, li, ol {
     left: 0;
   }
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 425px) {
   .girl__wrapper {
     display: flex;
     flex-direction: column;
@@ -1371,7 +1371,7 @@ ul, li, ol {
     content: url(./../../img/rotate-arrow.svg);
     position: absolute;
     top: 20%;
-    left: 10%;
+    left: 0%;
     z-index: 9999;
   }
   .girl__heading {
@@ -1427,31 +1427,51 @@ ul, li, ol {
     left: 0;
   }
 }
-.image__wrapper-container {
-  display: flex;
-  position: relative;
-  margin-bottom: 200px;
+.image__wrapper {
+  padding-top: 100px;
 }
-.image__wrapper-container:nth-child(2n) {
+.image__wrapper-item {
+  display: flex;
+  margin-bottom: 100px;
+}
+.image__wrapper-item:nth-child(2n) {
+  position: relative;
+}
+.image__wrapper-item:nth-child(2n) .image__wrapper-info {
   order: -1;
+  margin-bottom: 150px;
+}
+.image__wrapper-item:nth-child(2n) .image__wrapper-pic {
+  position: absolute;
+  top: 0;
+  left: 60%;
+  box-shadow: 500px 0 0 0 #E5ECF4;
+  border-radius: 50%;
+}
+.image__wrapper-item:nth-child(2n) .image__wrapper-info::before {
+  content: url(./../../img/bg_line-arrow.svg);
+  position: absolute;
+  top: 20%;
+  left: 200%;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
 }
 .image__wrapper-pic {
-  margin-right: 220px;
   box-shadow: -500px 0 0 0 #E5ECF4;
+  margin-right: 220px;
   border-radius: 50%;
 }
 .image__wrapper-info {
-  padding-top: 60px;
   max-width: 445px;
   width: 100%;
+  position: relative;
 }
 .image__wrapper-info::before {
   content: url(./../../img/bg_line-arrow.svg);
   position: absolute;
   top: 0;
-  left: -255px;
+  left: -210%;
 }
-.image__wrapper-heading {
+.image__wrapper-headeing {
   font-family: "Space Mono";
   font-style: normal;
   font-weight: 700;
@@ -1476,16 +1496,202 @@ ul, li, ol {
   font-weight: 700;
   font-size: 15px;
   line-height: 25px;
-  color: #FFFFFF;
-  padding: 14px 43px;
-  background: #FCB72B;
+  text-align: center;
+  color: #fff;
+  padding: 19px 44px;
+  background-color: #FCB72B;
 }
 .image__wrapper-link:hover {
-  background: #FFFFFF;
   color: #FCB72B;
+  background-color: #fff;
   box-shadow: 0 0 0 3px #FCB72B;
 }
 
+@media only screen and (max-width: 768px) {
+  .image__wrapper {
+    padding-top: 100px;
+    position: relative;
+  }
+  .image__wrapper-item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+  }
+  .image__wrapper-item:nth-child(2n) {
+    position: relative;
+  }
+  .image__wrapper-item:nth-child(2n) .image__wrapper-info {
+    order: -1;
+    margin-bottom: 150px;
+    padding-top: 100px;
+  }
+  .image__wrapper-item:nth-child(2n) .image__wrapper-pic {
+    position: absolute;
+    top: 0;
+    left: 20%;
+    box-shadow: 500px 0 0 0 #E5ECF4;
+    border-radius: 50%;
+  }
+  .image__wrapper-item:nth-child(2n) .image__wrapper-info::before {
+    content: url(./../../img/bg_line-arrow.svg);
+    position: absolute;
+    top: 10%;
+    left: 55%;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+  }
+  .image__wrapper-pic {
+    box-shadow: -500px 0 0 0 #E5ECF4;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 20%;
+  }
+  .image__wrapper-info {
+    max-width: 457px;
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .image__wrapper-info::before {
+    content: url(./../../img/bg_line-arrow.svg);
+    position: absolute;
+    top: 0;
+    left: -58%;
+  }
+  .image__wrapper-headeing {
+    font-family: "Space Mono";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: -2.14286px;
+    color: #495567;
+    margin-bottom: 24px;
+    padding-top: 400px;
+  }
+  .image__wrapper-text {
+    font-family: "Lexend Deca";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    color: #939CAA;
+    margin-bottom: 40px;
+  }
+  .image__wrapper-link {
+    font-family: "Space Mono";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+    color: #fff;
+    padding: 19px 44px;
+    background-color: #FCB72B;
+  }
+  .image__wrapper-link:hover {
+    color: #FCB72B;
+    background-color: #fff;
+    box-shadow: 0 0 0 3px #FCB72B;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .image__wrapper {
+    padding-top: 100px;
+    position: relative;
+  }
+  .image__wrapper-item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+  }
+  .image__wrapper-item:nth-child(2n) {
+    position: relative;
+  }
+  .image__wrapper-item:nth-child(2n) .image__wrapper-info {
+    order: -1;
+    margin-bottom: 150px;
+    padding-top: 100px;
+  }
+  .image__wrapper-item:nth-child(2n) .image__wrapper-pic {
+    position: absolute;
+    top: 10%;
+    width: 311px;
+    height: 311px;
+    left: 10%;
+    box-shadow: 500px 0 0 0 #E5ECF4;
+    border-radius: 50%;
+  }
+  .image__wrapper-item:nth-child(2n) .image__wrapper-headeing {
+    padding-top: 400px;
+  }
+  .image__wrapper-item:nth-child(2n) .image__wrapper-info::before {
+    content: url(./../../img/bg_line-arrow.svg);
+    position: absolute;
+    top: 10%;
+    left: 40%;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+  }
+  .image__wrapper-pic {
+    box-shadow: -500px 0 0 0 #E5ECF4;
+    border-radius: 50%;
+    position: absolute;
+    width: 311px;
+    height: 311px;
+    top: 0;
+    left: 14%;
+  }
+  .image__wrapper-info {
+    max-width: 457px;
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .image__wrapper-info::before {
+    content: url(./../../img/bg_line-arrow.svg);
+    position: absolute;
+    top: -15%;
+    left: -50%;
+  }
+  .image__wrapper-headeing {
+    font-family: "Space Mono";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: -2.14286px;
+    color: #495567;
+    margin-bottom: 24px;
+    padding-top: 300px;
+  }
+  .image__wrapper-text {
+    font-family: "Lexend Deca";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    color: #939CAA;
+    margin-bottom: 40px;
+  }
+  .image__wrapper-link {
+    font-family: "Space Mono";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+    color: #fff;
+    padding: 19px 44px;
+    background-color: #FCB72B;
+  }
+  .image__wrapper-link:hover {
+    color: #FCB72B;
+    background-color: #fff;
+    box-shadow: 0 0 0 3px #FCB72B;
+  }
+}
 .signup {
   background: #495567;
   padding-top: 102px;
