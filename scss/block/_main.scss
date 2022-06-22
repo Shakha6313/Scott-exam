@@ -1327,7 +1327,11 @@
 
 @media only screen and (max-width: 425px){
 
+    
+
     .image {
+
+        overflow-x: hidden;
 
         &__wrapper {
             padding-top: 100px;
