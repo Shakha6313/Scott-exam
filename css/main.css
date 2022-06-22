@@ -2034,6 +2034,7 @@ ul, li, ol {
 .footer__list-item {
   display: flex;
   gap: 32px;
+  margin-right: 550px;
 }
 .footer__list-link {
   font-family: "Space Mono";
@@ -2046,6 +2047,126 @@ ul, li, ol {
 .footer__list-link:hover {
   color: #FCB72B;
 }
+.footer__list-link:hover:active {
+  opacity: 0.5;
+}
 .footer__icon-list {
   display: flex;
+}
+.footer__icon-link {
+  display: flex;
+  margin-right: 30px;
+}
+.footer .footer__svg {
+  color: #FCB72B;
+}
+.footer .footer__svg:hover {
+  color: #fff;
+}
+
+@media only screen and (max-width: 1100px) {
+  /*  */
+  .footer__list-item {
+    display: flex;
+    gap: 32px;
+    margin-right: 400px;
+  }
+}
+@media only screen and (max-width: 985px) {
+  /*  */
+  .footer__list-item {
+    display: flex;
+    gap: 32px;
+    margin-right: 300px;
+  }
+}
+@media only screen and (max-width: 985px) {
+  /*  */
+  .footer__list-item {
+    display: flex;
+    gap: 32px;
+    margin-right: 200px;
+  }
+}
+@media only screen and (max-width: 985px) {
+  /*  */
+  .footer__list-item {
+    display: flex;
+    gap: 32px;
+    margin-right: 100px;
+  }
+}
+@media only screen and (max-width: 685px) {
+  /*  */
+  .footer__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer__logo-link {
+    margin: 0 auto;
+  }
+  .footer__list {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 41px;
+  }
+  .footer__list-item {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 151px;
+    gap: 32px;
+  }
+  .footer__icon-list {
+    display: flex;
+    margin-left: 127px;
+    margin-right: 127px;
+  }
+  .footer__icon-link {
+    display: flex;
+    margin-top: 87px;
+  }
+  .footer .footer__svg {
+    color: #FCB72B;
+  }
+  .footer .footer__svg:hover {
+    color: #fff;
+  }
+}
+@media only screen and (max-width: 425px) {
+  /*  */
+  .footer__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer__logo-link {
+    margin: 0 auto;
+  }
+  .footer__list {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    margin-top: 41px;
+  }
+  .footer__list-item {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 32px;
+  }
+  .footer__icon-list {
+    display: flex;
+    margin-left: 160px;
+  }
+  .footer__icon-link {
+    display: flex;
+    margin-top: 87px;
+  }
+  .footer .footer__svg {
+    color: #FCB72B;
+  }
+  .footer .footer__svg:hover {
+    color: #fff;
+  }
 }/*# sourceMappingURL=main.css.map */
