@@ -1373,8 +1373,8 @@ ul, li, ol {
   .girl__info::after {
     content: url(./../../img/rotate-arrow.svg);
     position: absolute;
-    top: 20%;
-    left: 0%;
+    top: 30%;
+    left: 10%;
     z-index: 9999;
   }
   .girl__heading {
@@ -1418,6 +1418,7 @@ ul, li, ol {
     max-width: 445px;
     width: 100%;
     position: absolute;
+    padding-top: 50px;
     top: -50px;
     left: 0%;
   }
