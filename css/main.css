@@ -1613,6 +1613,7 @@ ul, li, ol {
   }
   .image__wrapper-item:nth-child(2n) {
     position: relative;
+    overflow-x: hidden;
   }
   .image__wrapper-item:nth-child(2n) .image__wrapper-info {
     order: -1;
