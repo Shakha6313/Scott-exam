@@ -1091,9 +1091,7 @@
             position: absolute;
             top: -50px;
             left: 0%;
-            box-shadow: 500px 0 0 0 #E5ECF4;
-            border-radius: 50%;
-    
+            
             &::before{
                 content: url(./../../img/bg_line-arrow.svg);
                 position: absolute;
@@ -1363,8 +1361,6 @@
                     width: 311px;
                     height: 311px;
                     left: 10%;
-                    box-shadow: 500px 0 0 0 #E5ECF4;
-                    border-radius: 50%;
                 }
                 
                 .image__wrapper-headeing{
@@ -1385,8 +1381,6 @@
         }
     
         &__wrapper-pic {
-            box-shadow: -500px 0 0 0 #E5ECF4;
-            border-radius: 50%;
             position: absolute;
             width: 311px;
             height: 311px;

@@ -1420,8 +1420,6 @@ ul, li, ol {
     position: absolute;
     top: -50px;
     left: 0%;
-    box-shadow: 500px 0 0 0 #E5ECF4;
-    border-radius: 50%;
   }
   .girl__pic::before {
     content: url(./../../img/bg_line-arrow.svg);
@@ -1626,8 +1624,6 @@ ul, li, ol {
     width: 311px;
     height: 311px;
     left: 10%;
-    box-shadow: 500px 0 0 0 #E5ECF4;
-    border-radius: 50%;
   }
   .image__wrapper-item:nth-child(2n) .image__wrapper-headeing {
     padding-top: 400px;
@@ -1640,8 +1636,6 @@ ul, li, ol {
     transform: matrix(-1, 0, 0, 1, 0, 0);
   }
   .image__wrapper-pic {
-    box-shadow: -500px 0 0 0 #E5ECF4;
-    border-radius: 50%;
     position: absolute;
     width: 311px;
     height: 311px;
