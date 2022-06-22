@@ -1635,6 +1635,7 @@ ul, li, ol {
     top: 10%;
     left: 40%;
     transform: matrix(-1, 0, 0, 1, 0, 0);
+    overflow-x: hidden;
   }
   .image__wrapper-pic {
     position: absolute;
