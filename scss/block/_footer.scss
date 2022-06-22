@@ -21,12 +21,12 @@
 
     &__list {
         display: flex;
+        justify-content: space-between;
     }
 
     &__list-item {
         display: flex;
         gap: 32px;
-        margin-right: 570px;
     }
 
     &__list-item-link {
@@ -34,7 +34,7 @@
     }
 
     &__list-link {
-        font-family: 'Space Mono';
+    font-family: 'Space Mono';
         font-style: normal;
         font-weight: 700;
         font-size: 15px;
@@ -48,7 +48,6 @@
 
     &__icon-list {
         display: flex;
-        gap: 24px;
     }
 
     &__icon-item {

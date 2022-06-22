@@ -1636,7 +1636,6 @@ ul, li, ol {
     top: 10%;
     left: 40%;
     transform: matrix(-1, 0, 0, 1, 0, 0);
-    overflow-x: hidden;
   }
   .image__wrapper-pic {
     position: absolute;
@@ -1800,6 +1799,222 @@ ul, li, ol {
   padding-right: 15px;
 }
 
+@media only screen and (max-width: 768px) {
+  .signup {
+    background: #495567;
+    padding-top: 102px;
+    padding-bottom: 102px;
+    position: relative;
+  }
+  .signup::before {
+    content: url(./../../img/rounds.svg);
+    position: absolute;
+    top: 61%;
+    left: -25%;
+  }
+  .signup__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .signup__wrapper-heading {
+    font-family: "Space Mono";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: -2.14286px;
+    color: #FFFFFF;
+    width: 415px;
+    text-align: center;
+    margin-bottom: 48px;
+  }
+  .signup__wrapper-link {
+    display: flex;
+  }
+  .signup__ios {
+    background: #E5ECF4;
+    border-radius: 4px;
+    position: relative;
+    max-width: 182px;
+    width: 100%;
+    padding: 9px 16px;
+    padding-left: 52px;
+    margin-right: 18px;
+  }
+  .signup__ios::before {
+    content: url(./../../img/ios.svg);
+    position: absolute;
+    top: 25%;
+    left: 16px;
+  }
+  .signup__ios:active {
+    opacity: 0.5;
+  }
+  .signup__ios-text {
+    font-family: "Space Mono";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 15px;
+    letter-spacing: -0.446429px;
+    color: #495567;
+  }
+  .signup__ios-heading {
+    font-family: "Space Mono";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: -0.892857px;
+    color: #495567;
+  }
+  .signup__android {
+    background: #E5ECF4;
+    border-radius: 4px;
+    position: relative;
+    max-width: 182px;
+    width: 100%;
+    padding: 9px 16px;
+    padding-left: 52px;
+  }
+  .signup__android::before {
+    content: url(./../../img/gp.svg);
+    position: absolute;
+    top: 25%;
+    left: 16px;
+  }
+  .signup__android:active {
+    opacity: 0.5;
+  }
+  .signup__android-text {
+    font-family: "Space Mono";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 15px;
+    letter-spacing: -0.446429px;
+    color: #495567;
+  }
+  .signup__android-heading {
+    font-family: "Space Mono";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: -0.892857px;
+    color: #495567;
+    padding-right: 15px;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .signup {
+    background: #495567;
+    padding-top: 102px;
+    padding-bottom: 102px;
+    position: relative;
+  }
+  .signup::before {
+    content: url(./../../img/rounds.svg);
+    position: absolute;
+    top: 61%;
+    left: -145%;
+  }
+  .signup__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .signup__wrapper-heading {
+    font-family: "Space Mono";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 32px;
+    max-width: 311px;
+    width: 100%;
+    letter-spacing: -2.14286px;
+    color: #FFFFFF;
+    width: 415px;
+    text-align: center;
+    margin-bottom: 48px;
+  }
+  .signup__wrapper-link {
+    display: flex;
+  }
+  .signup__ios {
+    background: #E5ECF4;
+    border-radius: 4px;
+    position: relative;
+    max-width: 182px;
+    width: 100%;
+    padding: 9px 16px;
+    padding-left: 52px;
+    margin-right: 18px;
+  }
+  .signup__ios::before {
+    content: url(./../../img/ios.svg);
+    position: absolute;
+    top: 25%;
+    left: 16px;
+  }
+  .signup__ios:active {
+    opacity: 0.5;
+  }
+  .signup__ios-text {
+    font-family: "Space Mono";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 15px;
+    letter-spacing: -0.446429px;
+    color: #495567;
+  }
+  .signup__ios-heading {
+    font-family: "Space Mono";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: -0.892857px;
+    color: #495567;
+  }
+  .signup__android {
+    background: #E5ECF4;
+    border-radius: 4px;
+    position: relative;
+    max-width: 182px;
+    width: 100%;
+    padding: 9px 16px;
+    padding-left: 52px;
+  }
+  .signup__android::before {
+    content: url(./../../img/gp.svg);
+    position: absolute;
+    top: 25%;
+    left: 16px;
+  }
+  .signup__android:active {
+    opacity: 0.5;
+  }
+  .signup__android-text {
+    font-family: "Space Mono";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 15px;
+    letter-spacing: -0.446429px;
+    color: #495567;
+  }
+  .signup__android-heading {
+    font-family: "Space Mono";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: -0.892857px;
+    color: #495567;
+    padding-right: 15px;
+  }
+}
 .footer {
   background: #333A44;
   padding-top: 35px;
@@ -1814,11 +2029,11 @@ ul, li, ol {
 }
 .footer__list {
   display: flex;
+  justify-content: space-between;
 }
 .footer__list-item {
   display: flex;
   gap: 32px;
-  margin-right: 570px;
 }
 .footer__list-link {
   font-family: "Space Mono";
@@ -1833,5 +2048,4 @@ ul, li, ol {
 }
 .footer__icon-list {
   display: flex;
-  gap: 24px;
 }/*# sourceMappingURL=main.css.map */
